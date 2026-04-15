@@ -1,6 +1,7 @@
 const fs = require("fs");
 const http = require("http");
 
+//server creation
 const server = http.createServer((req, res) => {
   if (req.url === "/colors" && req.method === "GET") {
     fs.readFile("color_ palette.json", "utf-8", (err, data) => {
@@ -28,7 +29,7 @@ const server = http.createServer((req, res) => {
     );
   }
 });
-
+//server listening
 server.listen(3000, () => {
   console.log("Server is listening in http://localhost:3000");
 });
