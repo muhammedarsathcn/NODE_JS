@@ -1,0 +1,37 @@
+[
+  {
+    "color": "cadetblue 4",
+    "code": {
+      "hex": "#53868B"
+    },
+    "id": 152
+  },
+  {
+    "color": "turquoise 2",
+    "code": {
+      "hex": "#00E5EE"
+    },
+    "id": 154
+  },
+  {
+    "color": "turquoise 4",
+    "code": {
+      "hex": "#00868B"
+    },
+    "id": 156
+  },
+  {
+    "color": "cadetblue 3",
+    "code": {
+      "hex": "#7AC5CD"
+    },
+    "id": 151
+  },
+  {
+    "color": "darkturquoise",
+    "code": {
+      "hex": "#00CED1"
+    },
+    "id": 158
+  }
+]
