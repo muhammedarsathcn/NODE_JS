@@ -1,6 +1,6 @@
 import fs from "fs";
 import http from "http";
-import chalk from "chalk";
+import {  SERVER_PORT } from "./configs/env.config.js";
 
 const server = http.createServer((req, res) => {
   if (req.url === "/colors" && req.method === "GET") {
@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-
-server.listen(3000, () => {
-    console.log("Server is running on http://localhost:3000")
-})
+const PORT = SERVER_PORT;
+server.listen(PORT,"localhost", () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
