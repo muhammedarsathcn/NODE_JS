@@ -2,6 +2,8 @@ import fs from "fs";
 import http from "http";
 import {  SERVER_PORT } from "./configs/env.config.js";
 
+
+//creating a HTTP server
 const server = http.createServer((req, res) => {
   if (req.url === "/colors" && req.method === "GET") {
     fs.readFile("./data/color_ palette.json", "utf-8", (err, data) => {
@@ -30,6 +32,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
+//server listening
 const PORT = SERVER_PORT;
 server.listen(PORT,"localhost", () => {
   console.log(`Server is running on http://localhost:${PORT}`);
