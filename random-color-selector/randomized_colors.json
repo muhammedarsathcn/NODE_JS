@@ -1,37 +1,37 @@
 [
   {
-    "color": "cadetblue 4",
+    "color": "cadetblue 1",
     "code": {
-      "hex": "#53868B"
+      "hex": "#98F5FF"
     },
-    "id": 152
+    "id": 149
   },
   {
-    "color": "turquoise 2",
+    "color": "lightblue",
     "code": {
-      "hex": "#00E5EE"
+      "hex": "#ADD8E6"
     },
-    "id": 154
+    "id": 143
   },
   {
-    "color": "turquoise 4",
+    "color": "teal*",
     "code": {
-      "hex": "#00868B"
+      "hex": "#008080"
     },
-    "id": 156
+    "id": 180
   },
   {
-    "color": "cadetblue 3",
+    "color": "azure 4",
     "code": {
-      "hex": "#7AC5CD"
+      "hex": "#838B8B"
     },
-    "id": 151
+    "id": 162
   },
   {
-    "color": "darkturquoise",
+    "color": "cyan 2",
     "code": {
-      "hex": "#00CED1"
+      "hex": "#00EEEE"
     },
-    "id": 158
+    "id": 177
   }
 ]
