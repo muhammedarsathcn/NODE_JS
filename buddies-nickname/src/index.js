@@ -27,5 +27,5 @@ app.use(globalErrorHandler);
 //server listen
 const port = PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server is live on http://localhost:${3000}`);
+  console.log(`Server is live on http://localhost:${PORT}`);
 });
