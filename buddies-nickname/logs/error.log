@@ -1,0 +1,7 @@
+{"level":"error","message":"Fetch buddy by id is failed Buddy not existed","timestamp":"2026-04-18T16:48:06.471Z"}
+{"level":"error","message":"Fetch buddy by id is failed Buddy not existed","timestamp":"2026-04-18T16:54:51.665Z"}
+{"level":"error","message":"Unhandled Error Buddy not existed","method":"GET","stack":"Error: Buddy not existed\n    at getBuddiesById (file:///Users/muhammedarasathcn/NODE_JS/buddies-nickname/src/services/buddies.service.js:20:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async getBuddyById (file:///Users/muhammedarasathcn/NODE_JS/buddies-nickname/src/controllers/buddies.controller.js:48:22)","timestamp":"2026-04-18T16:54:51.665Z","url":"/buddies/empid101"}
+{"level":"error","message":"Fetch buddy by id is failed Buddy not existed","timestamp":"2026-04-18T16:55:05.582Z"}
+{"level":"error","message":"Create buddy failed Buddy already existed","timestamp":"2026-04-18T16:57:36.879Z"}
+{"level":"error","message":"Create buddy failed Buddy already existed","timestamp":"2026-04-18T17:09:04.867Z"}
+{"level":"error","message":"Fetch buddy by id is failed Buddy not existed","timestamp":"2026-04-18T17:09:10.143Z"}
