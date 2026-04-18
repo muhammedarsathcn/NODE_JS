@@ -5,10 +5,8 @@ import { PORT } from "./configs/env.config.js";
 import { globalErrorHandler } from "./middlewares/error.middleware.js";
 import buddiesRoutes from "./routes/buddies.route.js";
 import requestLoggerMiddleware from "./middlewares/requestLogger.middleware.js";
-
 // // making connection with database
 connectDb();
-
 // initialize and adding required middlewares
 const app = express();
 app.use(express.json());
