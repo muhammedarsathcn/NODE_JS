@@ -107,13 +107,16 @@ export const updateBuddy = async (
  * @returns  Object with status code, message
  */
 export const deleteBuddy = async (employeeId) => {
-  const isActive = false;
+  
   const buddy = await Buddy.findOneAndUpdate(
     { employeeId },
     { $set: { isActive: false } },
   );
   if (!buddy) {
     throw new AppError("Buddy is not existed", 404);
+  }
+  if (!buddy.isActive) {
+    throw new AppError("Buddy is already deleted",400)
   }
   return {
     message: "Buddy successfully deleted",

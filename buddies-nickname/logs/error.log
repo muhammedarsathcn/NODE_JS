@@ -5,3 +5,5 @@
 {"level":"error","message":"Create buddy failed Buddy already existed","timestamp":"2026-04-18T16:57:36.879Z"}
 {"level":"error","message":"Create buddy failed Buddy already existed","timestamp":"2026-04-18T17:09:04.867Z"}
 {"level":"error","message":"Fetch buddy by id is failed Buddy not existed","timestamp":"2026-04-18T17:09:10.143Z"}
+{"level":"error","message":"Fetch buddy by id is failed Buddy not existed","timestamp":"2026-04-18T17:20:34.393Z"}
+{"level":"error","message":"Soft delete buddy failed Buddy is already deleted","timestamp":"2026-04-18T17:21:42.458Z"}
