@@ -16,14 +16,11 @@ import {
  */
 export const fetchSingleUser = async (req, res, next) => {
   try {
-    const { id } = req.params;
-    if (req.user.id !== id) {
-      throw new AppError("You are unauthorized",403)
-    }
+    const { id } = req.user;
     if (!id) {
       throw new AppError("User id is missing", 400);
     }
-    const response = await fetchUser(id);
+    const response = await fetchUser({userId:id});
     return successResponse(
       res,
       response.message,

@@ -29,7 +29,6 @@ export const registerUser = async (req, res, next) => {
 
 /**
  * to sign in a User
- * 
  * @param {*} req from the user
  * @param {*} res from the server
  * @param {*} next to access the middleware

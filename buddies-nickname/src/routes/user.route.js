@@ -7,7 +7,7 @@ import {
 } from "../controllers/user.controller.js";
 const routes = express.Router();
 
-routes.get("/:id", verifyToken, fetchSingleUser);
+routes.get("/", verifyToken, fetchSingleUser);
 routes.patch("/:id", verifyToken, updateUser);
 routes.delete("/:id", verifyToken, deleteUser);
 

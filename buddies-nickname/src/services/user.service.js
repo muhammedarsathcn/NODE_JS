@@ -5,7 +5,7 @@ import User from "../schemas/user.schema.js";
  * @param {*} userId of user need to fetch
  * @returns user's data
  */
-export const fetchUser = async (userId) => {
+export const fetchUser = async ({userId}) => {
   const user = await User.findOne({
     _id: userId,
     isActive: true,
