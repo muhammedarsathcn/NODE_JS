@@ -81,9 +81,6 @@ export const updateBuddy = async (
   if (nickName !== undefined) updateData.nickname = nickName; // Match schema field name
   if (dob !== undefined) updateData.dob = new Date(dob);
   if (hobbies !== undefined) updateData.hobbies = hobbies;
-  if (Object.keys(updateData).length === 0) {
-    throw new AppError("No valid fields provided for update", 400);
-  }
   const updatedBuddy = await Buddy.findOneAndUpdate(
     { employeeId },
     { $set: updateData },

@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { connectDb } from "./configs/database.config.js";
+import { connectDb} from './services/db.service.js'
 import { PORT } from "./configs/env.config.js";
 import { globalErrorHandler } from "./middlewares/error.middleware.js";
 import buddiesRoutes from "./routes/buddies.route.js";
