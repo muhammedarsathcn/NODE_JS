@@ -1,59 +1,51 @@
 import { jest } from "@jest/globals";
 
 /*
-===========================
 Mock service layer
-===========================
 */
 
 const mockAssignBuddies = jest.fn();
 const mockFetchAllUsers = jest.fn();
 const mockDeleteUser = jest.fn();
 
-jest.unstable_mockModule("../services/admin.service.js", () => ({
+jest.unstable_mockModule("../src/services/admin.service.js", () => ({
   assignBuddies: mockAssignBuddies,
   fetchAllUsers: mockFetchAllUsers,
   deleteUser: mockDeleteUser,
 }));
 
 /*
-===========================
 Mock logger
-===========================
 */
 
-jest.unstable_mockModule("../configs/logger.config.js", () => ({
+jest.unstable_mockModule("../src/configs/logger.config.js", () => ({
   default: {
     error: jest.fn(),
   },
 }));
 
 /*
-===========================
 Mock success response middleware
-===========================
 */
 
 const mockSuccessResponse = jest.fn();
 
 jest.unstable_mockModule(
-  "../middlewares/globalResponse.middleware.js",
+  "../src/middlewares/globalResponse.middleware.js",
   () => ({
     successResponse: mockSuccessResponse,
   })
 );
 
 /*
-===========================
 Import AFTER mocking
-===========================
 */
 
 const {
   buddyAssigning,
   getAllUsers,
   userDelete,
-} = await import("./admin.controller.js");
+} = await import("../src/controllers/admin.controller.js");
 
 describe("Admin Controller Tests", () => {
   let req;
@@ -69,9 +61,7 @@ describe("Admin Controller Tests", () => {
   });
 
   /*
-  ===========================
   buddyAssigning tests
-  ===========================
   */
 
   test("should assign buddy successfully", async () => {
@@ -128,9 +118,7 @@ describe("Admin Controller Tests", () => {
   });
 
   /*
-  ===========================
   userDelete tests
-  ===========================
   */
 
   test("should delete user successfully", async () => {

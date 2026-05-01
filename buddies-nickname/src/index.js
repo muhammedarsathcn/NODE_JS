@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import { connectDb } from "./configs/database.config.js";
+import { connectDb } from "./services/database.service.js";
 import { PORT } from "./configs/env.config.js";
 import { globalErrorHandler } from "./middlewares/error.middleware.js";
 import authRoutes from "./routes/auth.route.js";
